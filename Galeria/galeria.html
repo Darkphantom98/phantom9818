@@ -4,12 +4,15 @@
       <title>Phantom9818</title>
 
       <style>
-        body {
-          background-image: url('./pexels-pixabay-316093.jpg');
-          background-repeat: no-repeat;
-          background-attachment: fixed;  
-          background-size: 100% 100%;
-  
+             /* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
         }
         </style>
 <!-- Lineas para los codigos de bootstrap-->
@@ -20,6 +23,12 @@
 
  </head>
 <body>
+ 
+  <!-- The video -->
+<video autoplay muted loop id="myVideo">
+  <source src="video.mp4" type="video/mp4">
+</video>
+ 
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="https:\\phantom9818.com">Inicio</a>
